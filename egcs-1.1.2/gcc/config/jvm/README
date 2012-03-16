@@ -1,0 +1,13 @@
+The JVM port of EGCS.
+
+The purpose of a C compiler is to convert post processed C code into an
+assembly language.  For the JVM port of EGCS I have chosen the Jasmin
+assembler which appears to be developing recognision as the java bytecode
+assembler of choice.  The current state of this project is promising.
+EGCS can successfully compile a C file into a jasmin assembly file that
+can be post processed and assembled to produce a class file.  The
+resultant class file can then be run on the Java Virtual Machine with
+minimal run time support.
+
+
+Trent Waddington 9/9/1999

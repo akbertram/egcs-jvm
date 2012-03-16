@@ -1,0 +1,161 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:581: checking host system type
+configure:604: checking build system type
+configure:630: checking for ar
+configure:661: checking for ranlib
+configure:736: checking for gcc
+configure:813: checking whether we are using GNU C
+configure:822: gcc -E conftest.c
+configure:837: checking whether gcc accepts -g
+configure:866: checking for POSIXized ISC
+configure:904: checking for a BSD compatible install
+configure:963: checking how to run the C preprocessor
+configure:984: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1027: checking for sys/file.h
+configure:1037: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1027: checking for sys/param.h
+configure:1037: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1027: checking for stdlib.h
+configure:1037: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1027: checking for string.h
+configure:1037: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1027: checking for unistd.h
+configure:1037: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1584: checking whether the C compiler (gcc -g -O2 ) works
+configure:1598: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1618: checking whether the C compiler (gcc -g -O2 ) is a cross-compiler
+configure:1625: checking for asprintf
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for atexit
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for basename
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for bcmp
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'bcmp' [enabled by default]
+configure:1625: checking for bcopy
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'bcopy' [enabled by default]
+configure:1625: checking for bzero
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'bzero' [enabled by default]
+configure:1625: checking for clock
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for getcwd
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for getpagesize
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for index
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'index' [enabled by default]
+configure:1625: checking for insque
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for memchr
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'memchr' [enabled by default]
+configure:1625: checking for memcmp
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'memcmp' [enabled by default]
+configure:1625: checking for memcpy
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'memcpy' [enabled by default]
+configure:1625: checking for memmove
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'memmove' [enabled by default]
+configure:1625: checking for memset
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'memset' [enabled by default]
+configure:1625: checking for random
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for rename
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for rindex
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'rindex' [enabled by default]
+configure:1625: checking for sigsetmask
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for strcasecmp
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'strcasecmp' [enabled by default]
+configure:1625: checking for strchr
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'strchr' [enabled by default]
+configure:1625: checking for strdup
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'strdup' [enabled by default]
+configure:1625: checking for strncasecmp
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'strncasecmp' [enabled by default]
+configure:1625: checking for strrchr
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'strrchr' [enabled by default]
+configure:1625: checking for strstr
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'strstr' [enabled by default]
+configure:1625: checking for strtod
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for strtol
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for strtoul
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for tmpnam
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for vasprintf
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1625: checking for vfprintf
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'vfprintf' [enabled by default]
+configure:1625: checking for vprintf
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'vprintf' [enabled by default]
+configure:1625: checking for vsprintf
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1637:6: warning: conflicting types for built-in function 'vsprintf' [enabled by default]
+configure:1625: checking for waitpid
+configure:1653: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1682: checking for working alloca.h
+configure:1694: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1715: checking for alloca
+configure:1743: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:1909: checking for ANSI C header files
+configure:1922: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1989: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:1984:67: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+configure:2013: checking for pid_t
+configure:2047: checking for vfork.h
+configure:2057: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:2053:19: fatal error: vfork.h: No such file or directory
+compilation terminated.
+configure: failed program was:
+#line 2052 "configure"
+#include "confdefs.h"
+#include <vfork.h>
+configure:2082: checking for working vfork
+configure:2233: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:2216:5: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+configure: In function 'sparc_address_test':
+configure:2171:12: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+configure:2260: checking for sys_errlist
+configure:2272: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2260: checking for sys_nerr
+configure:2272: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2260: checking for sys_siglist
+configure:2272: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2298: checking for getrusage
+configure:2326: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2298: checking for on_exit
+configure:2326: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2298: checking for psignal
+configure:2326: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2298: checking for strerror
+configure:2326: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2298: checking for strsignal
+configure:2326: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2298: checking for sysconf
+configure:2326: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2298: checking for times
+configure:2326: gcc -o conftest -g -O2   conftest.c  1>&5

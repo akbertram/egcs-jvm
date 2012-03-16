@@ -1,0 +1,7 @@
+
+EGCS-JVM is a reboot of Trent Waddington's JVM backend for EGCS, which
+makes it possible to compile C sources to JVM byte code. 
+
+The goal of the present project is to complete the compiler and add more convenient
+builder system that makes it possible to seamlessly integrate legacy C code with 
+JVM based systems.

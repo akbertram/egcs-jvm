@@ -1,0 +1,141 @@
+Instructions to compile and use the gcc jvm backend
+---------------------------------------------------
+In the following instructions, names in UPPERCASE 
+relate to directories that may be system dependent
+(i.e. you may install them at different locations). 
+They do not relate to environment variables that need
+to be added to your system.  These names are used 
+for ease of explanation.
+
+INSTALLING THE SYSTEM
+---------------------
+You need several GNU packages to install this backend. 
+For Solaris users, we recommend getting the precompiled
+packages from 
+	http://sunfreeware.com/
+Note that the Shell utils package is not available from 
+the Sunfreeware site, so you will need to get it from the
+GNU site and compile it.
+The GNU home page is located at 
+	http://www.gnu.ai.mit.edu/home.html
+For a package index check 
+	http://www.gnu.ai.mit.edu/prep/program.index.html
+The source code for gcc and egcs is supported by the EGCS group at
+	http://egcs.cygnus.com/index.html
+and the source code for egcs can be obtained from
+	ftp://egcs.cygnus.com/pub/egcs/releases/egcs-1.1.2/
+
+Packages
+--------
+1- egcs 1.1.2 source code: 
+   Install the source for egcs 1.1.2 in the same directory where you found
+    this file. Call this the SOURCEDIR
+
+2- GNU File Utilities (fileutils-3.15, installs in /opt/FSFfutil, and 
+   contains the following files: 
+chgrp      cp         dir        install    mkdir      mv         sync
+chmod      dd         dircolors  ln         mkfifo     rm         touch
+chown      df         du         ls         mknod      rmdir      vdir
+
+Note: if you have a reasonably gnu-friendly system (e.g. Linux) you may not
+need to get the above.
+
+3- GNU Binary Utilities (binutils-2.7, installs in /opt/FSFbinut, and 
+   contains the following files: 
+ar       c++filt  gprof    nm       objdump  size     strip
+as       gasp     ld       objcopy  ranlib   strings
+
+Note: As per the above, you may not need the above utilities if your system
+is Gnu-friendly.
+
+4- GNU Autoconf (autoconf-2.9, installs in /opt/FSFautoc, and contains 
+   the following files: 
+autoconf    autoheader  autoreconf  autoscan    autoupdate  ifnames
+
+Note: As per the above, you may not need the above utilities if your system
+is Gnu-friendly.
+
+5- GNU Diff utils (diffutils-2.7-sol7-sparc-local, installs in 
+   /usr/local, package name GNUdiffut, which contains the following files: 
+cmp         diff        diff3       sdiff       
+
+Note: As per the above, you may not need the above utilities if your system
+is Gnu-friendly.
+
+6- GNU m4 macro processor (m4-1.4-sol26-sparc-local, installs in 
+   /usr/local, and contains the following files: 
+m4 
+
+Note: As per the above, you may not need the above macro processor if your
+system is Gnu-friendly.
+
+7- GNU Grep (grep-2.0, installs in /opt/FSFgrep, and contains the
+   following files: 
+egrep  fgrep  grep
+
+Note: As per the above, you may not need the above utilities if your system
+is Gnu-friendly.
+
+8- GNU Text utilities (textutils-1.22-sol26-sparc-local, installs in 
+   /usr/local, package name FSFtextu, and contains the following files: 
+cat	cksum	comm	csplit	cut	expand	  fmt	fold
+head	join	md5sum	nl	od	paste	  pr	sort
+split	sum	tac	tail	tr	unexpand  uniq	wc
+
+Note: As per the above, you may not need the above utilities if your system
+is Gnu-friendly.
+
+9 - GNU Sed (sed-2.05,  installs in /opt/FSFsed, can contains the 
+    following file: 
+sed
+
+Note: As per the above, you may not need the above utility if your system
+is Gnu-friendly.
+
+10- GNU Shell utils (sh-utils-1.16, installs in /usr/local, and contains
+    amongst other files these ones: 
+basename   dirname   expr   false   sleep   true   
+
+Note: As per the above, you may not need the above utilities if your system
+is Gnu-friendly.
+
+You will also need the GNU make program, a gzip program and the 
+following commands in your path: 
+	cp	ls	mv	rm
+
+
+Getting gcc_jvm files
+---------------------
+After getting the egcs 1.1.2 source files, remember to untar gcc-jvm.tar again,
+so that files such as config.sub in this directory are overwritten (and in the
+gcc directory, config.sub and configure.in). There should be 7 files in
+gcc/config/jvm.
+
+Making gcc_jvm on your system
+-----------------------------
+Make the jvm backend: 
+	cd ../build-java
+ 	../egcs-1.1.2/configure jvm
+ 	make cross	(this takes several minutes and fails at link time)
+
+This creates a file called cc1 in the gcc directory, which has the same 
+options as gcc plus jasmin support (used in steps below): 
+	gcc/cc1 -o foo.j foo.c 	// creates a jasmin file
+
+
+USING THE SYSTEM
+----------------
+From the build directory, change to tests, choose an example, change to the
+example's directory, and type make.
+
+Changing the system
+-------------------
+If gcc jvm files are changed, to rebuild the new version of the
+system do: 
+	change to the build directory
+	make clean
+	make cross
+
+### this *should* work but may not on some systems. If so, a full
+reinstallation of the egcs-1.1.2 sources fixed the problem.
+
