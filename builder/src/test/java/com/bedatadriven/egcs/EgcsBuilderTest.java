@@ -10,14 +10,13 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class CBuilderTest {
+public class EgcsBuilderTest {
 
-	private CBuilder compiler;
+	private EgcsBuilder compiler;
 	
 	@Before
 	public void setUp() {
-		this.compiler = new CBuilder();
-		compiler.setCC1Path("/home/alexander/dev/egcs-jvm/egcs-1.1.2/gcc/cc1");
+		this.compiler = new EgcsBuilder();
 	}
 
 	@Test

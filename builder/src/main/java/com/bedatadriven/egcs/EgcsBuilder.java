@@ -14,12 +14,12 @@ import com.google.common.io.ByteStreams;
 import com.google.common.io.Files;
 import com.google.common.io.Resources;
 
-public class CBuilder {
+public class EgcsBuilder {
 		
 	private static final Charset SOURCE_CHARSET = Charsets.UTF_8;
 		
-	private String cc1Path = "cc1";
-	private String gccPath = "gcc";
+	private String cc1Path = "cc1-jvm";
+	private String cppPath = "cpp-jvm";
 	
 	private String className;
 	private File sourceDir;
@@ -31,19 +31,18 @@ public class CBuilder {
 	
 	/**
 	 * 
-	 * @param path the path to the egcs-jvm cc1 binary
+	 * @param path the path to the egcs-jvm cc1 binary (default is 'cc1-jvm')
 	 */
-	public void setCC1Path(String path) {
+	public void setCCompilerBinaryPath(String path) {
 		this.cc1Path = path;
 	}
 	
 	/**
 	 * 
-	 * @param path the path to the normal gcc binary; used for preprocessing
-	 * the C source files
+	 * @param path the path to C preprocessor (default is 'cpp-jvm')
 	 */
-	public void setGccPath(String path) {
-		this.gccPath = path;
+	public void setCPreprocessorBinaryPath(String path) {
+		this.cppPath = path;
 	}
 	
 	/**
@@ -162,7 +161,7 @@ public class CBuilder {
 	 */
 	File preprocess(File sourceFile) throws InterruptedException, IOException {
 		File intermediate = replaceExtension(sourceFile, "i");
-		exec(gccPath, "-E", "-DVERSION=\"java\"", sourceFile.getName(), "-o", intermediate.getName());
+		exec(cppPath, "-DVERSION=\"java\"", sourceFile.getName(), "-o", intermediate.getName());
 
 		return intermediate;
 	}

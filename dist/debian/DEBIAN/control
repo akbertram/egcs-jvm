@@ -1,0 +1,10 @@
+Package: egcs-jvm
+Version: 1.1.2-1
+Section: base
+Priority: optional
+Architecture: amd64
+Depends: 
+Maintainer: Alex Bertram <alex@bedatadriven.com>
+Description: A build of EGCS targeting the Java Virtual Machine
+
+
