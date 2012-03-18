@@ -1,17 +1,19 @@
-		   README for GNU development tools
 
-This directory contains various GNU compilers, assemblers, linkers, 
-debuggers, etc., plus their support routines, definitions, and documentation.
+This directory contains the merged sources from 
+http://gcc.fyxm.net/releases/egcs-1.1.2/egcs-1.1.2.tar.gz and
+http://heanet.dl.sourceforge.net/project/egcs-jvm/EGCS-JVM/original-patch/egcs-jvm.tar.gz
+
+BUILDING
+
+./configure jvm
+make cross
+
+The build should run for a bit and then fail; this is "normal", but you
+should be able to execute the cc1 and cpp binaries in gcc/
+
+The cc1 compiler will produce output in jasmin assembly language. This
+is used in turn as input to the EgcsBuilder class in the egcs-jvm-builder
+module, which will combine the assembly output into a single class file.
 
 
-Check the INSTALL directory for detailed configuration and installation
-instructions.
 
-
-Much of the code and documentation enclosed is copyright by
-the Free Software Foundation, Inc.  See the file COPYING or
-COPYING.LIB in the various directories, for a description of the
-GNU General Public License terms under which you can copy the files.
-
-REPORTING BUGS: Again, see gdb/README, binutils/README, etc., for info
-on where and how to report problems.
