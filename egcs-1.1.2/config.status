@@ -1,5 +1,0 @@
-#!/bin/sh
-# This file was generated automatically by configure.  Do not edit.
-# This directory was configured as follows:
-./configure --with-gcc-version-trigger=/home/alexander/dev/egcs-jvm/egcs-1.1.2/gcc/version.c --host=jvm --norecursion 
-# 
