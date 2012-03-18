@@ -199,7 +199,7 @@ case $basic_machine in
 	  ;;
 	# Object if more than one company name word.
 	*-*-*)
-		echo Invalid configuration \`$1\': machine \`$basic_machine\' not recognized 1>&2
+		echo EEK1 Invalid configuration \`$1\': machine \`$basic_machine\' not recognized 1>&2
 		exit 1
 		;;
 	# Recognize the basic CPU types with company name.
@@ -628,6 +628,9 @@ case $basic_machine in
 	pentium-* | p5-*)
 		basic_machine=i586-`echo $basic_machine | sed 's/^[^-]*-//'`
 		;;
+	x86_64-*)
+		basic_machine=i686-`echo $basic_machine | sed 's/^[^-]*-//'`
+		;;
 	pentiumpro-* | p6-*)
 		basic_machine=i686-`echo $basic_machine | sed 's/^[^-]*-//'`
 		;;
@@ -859,7 +862,7 @@ case $basic_machine in
 		basic_machine=powerpc-apple
 		;;
 	*)
-		echo Invalid configuration \`$1\': machine \`$basic_machine\' not recognized 1>&2
+		echo EEK2 Invalid configuration \`$1\': machine \`$basic_machine\' not recognized 1>&2
 		exit 1
 		;;
 esac
@@ -996,7 +999,7 @@ case $os in
 	*)
 		# Get rid of the `-' at the beginning of $os.
 		os=`echo $os | sed 's/[^-]*-//'`
-		echo Invalid configuration \`$1\': system \`$os\' not recognized 1>&2
+		echo EEK3 Invalid configuration \`$1\': system \`$os\' not recognized 1>&2
 		exit 1
 		;;
 esac
